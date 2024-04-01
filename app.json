@@ -4,27 +4,37 @@
     "slug": "AIgenius",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "icon": "./assets/images/Ai-Logo.png",
+    "userInterfaceStyle": "dark",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/images/loading.gif",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#000"
     },
     "assetBundlePatterns": [
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.chauhanaman.AIgenius"
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      }
+        "foregroundImage": "./assets/images/Ai-Logo.png",
+        "backgroundColor": "#1a202c"
+      },
+      "permissions": [
+        "android.permission.RECORD_AUDIO"
+      ],
+      "package": "com.chauhanaman.AIgenius"
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/images/Ai-Logo.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "528d0fed-c0eb-4f94-8655-f50b1a8889e5"
+      }
     }
   }
 }
